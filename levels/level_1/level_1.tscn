@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://levels/level_1/level_1.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/BG/BG2.png" type="Texture" id=2]
+[ext_resource path="res://levels/level_1/circuit.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Switch.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Lamp.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=7]
+
+[node name="level" type="Node2D"]
+
+script = ExtResource( 1 )
+A = true
+B = false
+C = false
+D = false
+E = false
+
+[node name="Walls" type="StaticBody2D" parent="." index="0"]
+
+position = Vector2( -0.00410461, 1.95116 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 3.39195, -0.55064, 2.06511, 134.124, 75.5364, 133.298, 75.9173, 29.6639, 944.616, 26.3398, 943.672, 568.131, 75.6658, 570.661, 74.9979, 117.792, 4.15292, 135.88, 2.17781, 594.043, 1024.9, 597.914, 1023.72, 2.4893, 74.4283, 1.44234 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="BG" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="circuit" type="Sprite" parent="." index="2"]
+
+position = Vector2( 501.984, 315.771 )
+texture = ExtResource( 3 )
+
+[node name="X" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 894.999, 309.455 )
+_sections_unfolded = [ "Transform" ]
+letra = "x"
+
+[node name="A" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 133.551, 306.35 )
+letra = "a"
+
+[node name="Button" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 493.98, 529.94 )
+
+[node name="Player" parent="." index="6" instance=ExtResource( 7 )]
+
+position = Vector2( 414.151, 203.752 )
+scale = Vector2( 3, 3 )
+
+

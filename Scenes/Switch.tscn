@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Switch.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/Sprites/switch/switch down.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Sprites/switch/Bolt.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Sprites/gates/letters.png" type="Texture" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 46.9198
+height = 0.285912
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 30.4668
+height = 41.8376
+
+[node name="Switch" type="StaticBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+letra = "w"
+
+[node name="Switch" type="Sprite" parent="." index="0"]
+
+position = Vector2( 8.02532, 8.11007 )
+rotation = 3.14159
+scale = Vector2( 0.2, -0.2 )
+texture = ExtResource( 2 )
+hframes = 2
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="Bolt" type="Sprite" parent="." index="1"]
+
+position = Vector2( 76.9378, 4.27145 )
+scale = Vector2( 1, 1.333 )
+texture = ExtResource( 3 )
+vframes = 2
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="letters" type="Sprite" parent="." index="2"]
+
+position = Vector2( -56.0953, 4.32335 )
+texture = ExtResource( 4 )
+vframes = 3
+hframes = 3
+_sections_unfolded = [ "Animation" ]
+
+[node name="Active_Area" type="Area2D" parent="." index="3"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Active_Area" index="0"]
+
+position = Vector2( -25.3969, 1.62107 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="4"]
+
+position = Vector2( 18.9126, 4.86324 )
+shape = SubResource( 2 )
+
+

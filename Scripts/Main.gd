@@ -4,7 +4,7 @@ extends Node2D
 # var a = 2
 # var b = "textvar"
 var TITLE = load("res://Scenes/Title.tscn")
-var LEVEL = load("res://Scenes/test_level.tscn")
+var LEVEL = load("res://levels/level_1/level_1.tscn")
 
 func _ready():
 	var title = TITLE.instance()

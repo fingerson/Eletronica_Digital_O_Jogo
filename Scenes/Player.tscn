@@ -3,7 +3,6 @@
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Sprites/gnome/gnomes.png" type="Texture" id=2]
 
-
 [sub_resource type="Animation" id=1]
 
 resource_name = "walking_down"
@@ -132,7 +131,7 @@ tracks/1/keys = {
 
 custom_solver_bias = 0.0
 radius = 8.72888
-height = 16.4632
+height = 4.05042
 
 [node name="Player" type="KinematicBody2D"]
 
@@ -167,6 +166,7 @@ blend_times = [  ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
 
+position = Vector2( -0.450211, 5.42339 )
 shape = SubResource( 5 )
 
 

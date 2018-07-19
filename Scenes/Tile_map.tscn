@@ -1,0 +1,198 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Graphics/Sprites/gates/letters.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Sprites/gates/Logic_Gates.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="A" type="Sprite" parent="." index="0"]
+
+position = Vector2( 551.145, 169.372 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="B" type="Sprite" parent="." index="1"]
+
+position = Vector2( 552.373, 272.502 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 1
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="C" type="Sprite" parent="." index="2"]
+
+position = Vector2( 561.896, 386.773 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 2
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="D" type="Sprite" parent="." index="3"]
+
+position = Vector2( 680.248, 177.275 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 3
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="E" type="Sprite" parent="." index="4"]
+
+position = Vector2( 684.329, 279.303 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 4
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="W" type="Sprite" parent="." index="5"]
+
+position = Vector2( 691.131, 366.367 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 5
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="X" type="Sprite" parent="." index="6"]
+
+position = Vector2( 805.403, 163.672 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 6
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="Y" type="Sprite" parent="." index="7"]
+
+position = Vector2( 793.159, 276.583 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 7
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="Z" type="Sprite" parent="." index="8"]
+
+position = Vector2( 809.484, 377.25 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 8
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="AND" type="Sprite" parent="." index="9"]
+
+position = Vector2( 120.948, 224.643 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="NAND" type="Sprite" parent="." index="10"]
+
+position = Vector2( 118.948, 145.643 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 1
+_sections_unfolded = [ "Animation" ]
+
+[node name="NOT" type="Sprite" parent="." index="11"]
+
+position = Vector2( 295.125, 143.427 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 2
+_sections_unfolded = [ "Animation" ]
+
+[node name="OR" type="Sprite" parent="." index="12"]
+
+position = Vector2( 292.909, 229.853 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 3
+_sections_unfolded = [ "Animation" ]
+
+[node name="NOR" type="Sprite" parent="." index="13"]
+
+position = Vector2( 130.028, 320.712 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 5
+_sections_unfolded = [ "Animation" ]
+
+[node name="XOR" type="Sprite" parent="." index="14"]
+
+position = Vector2( 276.289, 320.712 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 4
+_sections_unfolded = [ "Animation" ]
+
+[node name="NXOR" type="Sprite" parent="." index="15"]
+
+position = Vector2( 117.621, 407.562 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 6
+_sections_unfolded = [ "Animation" ]
+
+[node name="LINE" type="Sprite" parent="." index="16"]
+
+position = Vector2( 240.395, 414.928 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 7
+_sections_unfolded = [ "Animation" ]
+
+[node name="LINE2" type="Sprite" parent="." index="17"]
+
+position = Vector2( 371.242, 385.524 )
+scale = Vector2( 0.5, 1 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 7
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="L" type="Sprite" parent="." index="18"]
+
+position = Vector2( 110.887, 505.811 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 10
+_sections_unfolded = [ "Animation" ]
+
+[node name="T" type="Sprite" parent="." index="19"]
+
+position = Vector2( 249.084, 505.811 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 9
+_sections_unfolded = [ "Animation" ]
+
+[node name="PLUS" type="Sprite" parent="." index="20"]
+
+position = Vector2( 349.057, 504.341 )
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 8
+_sections_unfolded = [ "Animation" ]
+
+
